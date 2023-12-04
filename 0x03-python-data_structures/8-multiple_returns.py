@@ -4,6 +4,6 @@ def multiple_returns(sentence):
         sentence = None
         if sentence:
             sen_len = len(sentence)
-            first = sentence if not sentence else sentence[:1]
-            second = sentence if not sentence else sentence[1:2]
-            return (sen_len, first, second)
+        else:
+            sen_len = 0
+            return (sen_len, sentence if not sentence else sentence[:1])
