@@ -1,4 +1,2 @@
 #!/usr/bin/python3
-for i in range(00, 100):
-    print('{:02d}'.format(i), end=', ')
-print()
+print(', '.join(f"{n:02d}" for n in range(100)))
