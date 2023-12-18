@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 
 import sys
+
+
 def safe_function(fct, *args):
+
     try:
-        num =fct(*args)
+        num = fct(*args)
         return num
 
     except Exception as err:
