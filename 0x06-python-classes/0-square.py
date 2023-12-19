@@ -2,7 +2,9 @@
 
 """Define a class aquare."""
 
+
 class Square:
-  """Represents a square."""
+    """Represents a square."""
+
 
 pass
