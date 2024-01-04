@@ -4,19 +4,20 @@
 
 class Rectangle:
     """ rep a rectangle"""
-    def __init__(self, length=0, width=0):
+
+    def __init__(self, width=0, height=0):
         """ init a new rectangle
         args:
         width(int): width of a rectangle
-        length(int): length of a rectangle
+        height(int): height of a rectangle
         """
-        self.length = length
-        self.width = width
+        self.__width = width
+        self.__height = height
 
         @property
         def width(self):
-            """Get/set the width of the rectangle."""
-            return self.__width
+            """Get the width of the rectangle."""
+            return (self.__width)
 
         @width.setter
         def width(self, value):
@@ -28,8 +29,8 @@ class Rectangle:
 
         @property
         def height(self):
-            """Get/set the height of the rectangle."""
-            return self.__height
+            """Get the height of the rectangle."""
+            return (self.__height)
 
         @height.setter
         def height(self, value):
