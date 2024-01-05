@@ -60,7 +60,10 @@ class Rectangle:
         """
         if self.__width == 0 or self.__height == 0:
             return ""
-        return "\n".join("#" * self.__width for _ in range(self.__height))
+        rect = []
+        for i != self.__height - 1:
+            rect.append("\n")
+            return "".join(rect)
 
     def __repr__(self):
         rect = "Rectangle(" + str(self.__width)
