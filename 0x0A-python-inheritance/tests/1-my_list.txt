@@ -1,24 +1,24 @@
-The `1-my_list` module
+The ``1-my_list`` module
 ======================
 
-Using `MyList`
+Using ``MyList``
 -------------------
 
 Importing the function from the module:
-        >>> MyList = _import_("1-my_list").MyList
+        >>> MyList = __import__("1-my_list").MyList
 
 Checking for module docstring:
-         >>> m = _import("1-my_list").doc_
+         >>> m = __import__("1-my_list").__doc__
          >>> len(m) > 1
          True
 
 Checking for class docstring:
-         >>> c = _import("1-my_list").MyList.doc_
+         >>> c = __import__("1-my_list").MyList.__doc__
          >>> len(c) > 1
          True
 
 Checking for method docstring:
-	 >>> mod = _import("1-my_list").MyList.print_sorted.doc_
+	 >>> mod = __import__("1-my_list").MyList.print_sorted.__doc__
 	 >>> len(mod) > 1
 	 True
 

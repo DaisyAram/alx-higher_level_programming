@@ -1,27 +1,27 @@
-The `7-base_geometry` module
+The ``7-base_geometry`` module
 ======================
 
-Using `BaseGeometry`
+Using ``BaseGeometry``
 -------------------
 
 Importing the function from the module:
-        >>> BG = _import_("7-base_geometry").BaseGeometry
+        >>> BG = __import__("7-base_geometry").BaseGeometry
 
 Checking for module docstring:
-         >>> m = _import("7-base_geometry").doc_
+         >>> m = __import__("7-base_geometry").__doc__
          >>> len(m) > 1
          True
 
 Checking for class docstring:
-         >>> c = _import("7-base_geometry").BaseGeometry.doc_
+         >>> c = __import__("7-base_geometry").BaseGeometry.__doc__
          >>> len(c) > 1
          True
 
 Checking for method docstring:
-	 >>> mod1 = _import("7-base_geometry").BaseGeometry.area.doc_
+	 >>> mod1 = __import__("7-base_geometry").BaseGeometry.area.__doc__
 	 >>> len(mod1) > 1
 	 True
-	 >>> mod2 = _import("7-base_geometry").BaseGeometry.integer_validator.doc_
+	 >>> mod2 = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
          >>> len(mod2) > 1
          True
 
@@ -115,4 +115,4 @@ Checking for too many arguments:
 	 >>> b.integer_validator("integer", 1, 2)
 	 Traceback (most recent call last):
          ...
-	 TypeError: integer_validator() takes 3 positional arguments but 4 were ven
+	 TypeError: integer_validator() takes 3 positional arguments but 4 were given
