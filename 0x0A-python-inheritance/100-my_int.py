@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""func that defines a class MyInt"""
+"""contains the class MyInt"""
 
 
 class MyInt(int):
@@ -9,10 +9,10 @@ class MyInt(int):
         """create a new instance of the class"""
         return super(MyInt, cls).__new__(cls, *args, **kwargs)
 
-    def _eq_(self, value):
+    def __eq__(self, value):
         """Override == opeartor with != behavior."""
         return self.real != value
 
-    def _ne_(self, value):
+    def __ne__(self, value):
         """Override != operator with == behavior."""
         return self.real == value
