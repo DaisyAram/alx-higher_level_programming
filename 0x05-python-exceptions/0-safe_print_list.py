@@ -1,27 +1,21 @@
 #!/usr/bin/python3
 
 def safe_print_list(my_list=[], x=0):
-    """print x elements in alist.
+    """Print x elememts of a list.
 
     Args:
-    my_list(list) : list to print elements
-    x(int): number of elements to print
+        my_list (list): The list to print elements from.
+        x (int): The number of elements of my_list to print.
 
     Returns:
-    number of elements printed.
+        The number of elements printed.
     """
-
-    real_elements_printed = 0
-    try:
-        for i in range(len(my_list)):
-            print(my_list[i], end=" ")
-            real_elements_printed += 1
-            if real_elements_printed == x:
-                break
-        print()
-    except TypeError:
-        print("Error: List must contain only printable elements")
-    except Exception as e:
-        print("Error: ", str(e))
-
-    return real_elements_printed
+    ret = 0
+    for i in range(x):
+        try:
+            print("{}".format(my_list[i]), end="")
+            ret += 1
+        except IndexError:
+            break
+    print("")
+    return (ret)
