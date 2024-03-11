@@ -5,7 +5,7 @@
 Scripting (same as we did with Python)
 Web front-end
 
-# General learning objectives :bold:
+# General learning objectives:
 * Why JavaScript programming is amazing
 * How to run a JavaScript script
 * How to create variables and constants
