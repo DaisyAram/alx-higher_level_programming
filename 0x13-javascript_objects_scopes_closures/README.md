@@ -1,4 +1,4 @@
-# 0x13. JavaScript - Objects, Scopes and Closures: pencil2
+# 0x13. JavaScript - Objects, Scopes and Closures: pencil2:
 
 ## Learning Objectives :heavy_check_mark:
 * Why JavaScript programming is amazing
