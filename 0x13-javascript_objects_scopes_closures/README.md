@@ -1,6 +1,6 @@
-# >0x13. JavaScript - Objects, Scopes and Closures
+# 0x13. JavaScript - Objects, Scopes and Closures: pencil2
 
-## Learning Objectives
+## Learning Objectives :heavy_check_mark:
 * Why JavaScript programming is amazing
 * How to create an object in JavaScript
 * What this means
