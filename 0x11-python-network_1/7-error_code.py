@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """A script that takes in a URL, sends a request to the URL
-- and displays the body of the response.ort sys
+- and displays the body of the response.
 """
 
 
 import requests
+import sys
 
 
 if __name__ == "__main__":
