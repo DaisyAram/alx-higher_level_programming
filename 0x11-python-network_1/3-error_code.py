@@ -12,7 +12,7 @@ if __name__ == "__main__":
      url = sys.argv[1]
      request = urllib.request.Request(url)
      try:
-        with request.urlopen(request) as r:
+        with urllib.request.urlopen(request) as r:
             print(r.read().decode('ascii'))
-    except error.HTTPError as err:
-        print('Error code:{}'.format(err.code)
+     except urllib.error.HTTPError as err:
+         print('Error code:{}'.format(err.code))
