@@ -5,7 +5,7 @@ const apiUrl = process.argv[2];
 
 request(apiUrl, (error, response, body) => {
   if (error) {
-    console.error(`An error occurred: ${error}`);
+    console.error(error);
     process.exit(1);
   }
 
